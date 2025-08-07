@@ -1,0 +1,52 @@
+What is it?
+Linux is an open-source operating system - like windows or macOS.
+It powers most servers, supercomputers, cloud platforms, and datacentres.
+Many android phones, TVs, routers and even NVIDIA GPU's run on Linux internally. 
+- Almost every NVIDIA data centre server runs on Linux - especially Ubuntu, CentOS, or Red Hat.
+
+Linux in Data Centers
+NVIDIAS Servers (like DGX systems or PU clusters) use Linux to:
+  Install GPU driver & CUDA
+  Run AI workloads (via Python, PyTorchm etc.)
+  Monitor GPUs with DCGM or nvidiaa-smi
+  Deploy containers with Docker/Kubernetes
+  Automate everything with Bash or Ansible
+So: Must be comfortable in Linux terminal. As theres no graphical user interface, just shell power.
+Quickly explaining more on the above:
+
+What is CUDA? Compute Unified Device Architecture
+This is a programming platform by NVIDIA that lets developers run code on the GPU instead of the CPU.
+---------------------------------------------------------------------------------------------------------
+Why it matters:
+GPUs are extremely good at doing many calculations at once (parallel computing)
+CUDA lets you write programs (in C/C++/Python/etc.) that run directly on the GPU.
+---------------------------------------------------------------------------------------------------------
+Real-world example:
+You want to process an image using AI > instead of using the CPU, you write code with CUDA and run it on the GPU . way faster 
+Summary: CUDA is NVIDIA's way of giving you access to the GPU for non-graphics, high-performance computing.
+CUDA is part of the GPU's physical design - when NVIDIA build GPUs they build in: 
+  CUDA Cores: Tiny processors inside the GPU optimized for parallel tasks (like AI, image processing, simulation).
+  CUDA instructions: The GPU has hardware that can understand and execute special CUDA instructions.
+just like a CPU has x86 instructions, a NVIDIA GPU has CUDA instructions. 
+But to use the CUDA hardware you also need the CUDA software toolkit which includes:
+  CUDA Driver: talks to the GPU hardware
+  CUDA runtime: Lets your programs use CUDA
+  cuBLAS/cuDNN: Libraries for fast math, deep learning, etc.
+  nvcc: CUDA compiler
+  nvidia-smi: Tool to monitor GPU
+SO what happens when you run a CUDA-powered program?
+1. If you have a python code that says "send this matric to the GPU"
+2. PyTorch uses CUDA instructions to prepare that data.(with its cuBLAS/cuDNN)
+3. The CUDA driver talks to the GPU
+4. The GPU hardware (CUDA cores) runs the computation.
+5. You get results - way faster than CPU
+      WHY DOES ANY OF THIS CUDA STUFF MATTER? 
+On Linx servers, you must manually install the NVIDIA GPU driver + CUDA toolkit, just like any other system - because Linux doesnt come with them preinstalled.
+so if you are using bash in Linux to get a GPU driver you would do something like:
+      sudo apt install nvidia-driver-xxx
+then reboot and run: 
+      nvidia-smi
+If it works, youll see GPU info.
+
+
+
