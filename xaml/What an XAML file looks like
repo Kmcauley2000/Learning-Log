@@ -1,0 +1,64 @@
+<Window x:Class="MyFirstApp.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Title="Hello" Height="300" Width="400">
+    <Grid> 
+        <Button Content="Click Me!" Width="100" Height="30" />
+    </Grid>
+</Window>
+
+
+Understanding this code step by step.
+
+Line 1:
+<Window> is the root element. This defines the main window of your app - like the main screen
+x:Class+"MyFirstApp.MainWindow" links this XAML file to a C# code file called MainWindow.xaml.cs - where the logic goes.
+This line is like the "this is a component, which is part of the main component of my app.
+
+Line 2:
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+This namespace tells XAML: "use the WPF library to understand what elements like <Button> and <Grid> mean.
+So best way to understand this in my terms - is its similar to Unity:
+when you put:
+Using UnityEngine
+Using System.collections
+so basically this XAML line equivalent is fetching the classes which are like tool templates to use. Which in this instance is in the WPF library.
+
+Line 3;
+Title="Hello" Height="300" Width="400">
+Titile: Text shown in the window title bar
+Height: How tall the window is (in pixels) 
+Width: How wide the window is (in pixels)
+
+Line 4:
+<Grid>
+A grid is a layout container - it helps you organise where controls go (similar to a vertical layout group component in Unity)
+Its like a blank canvas to arrange your buttons, textboxes, etc.
+This opens a grid block - everything inside it is part of the layout
+
+Line 5:
+<Button Content="Click Me!" Width="100" Height="30" />
+This line creates a button
+Content: Is the text shown on the button
+Width: The buttons width in pixels
+Height: The buttons height in pixels
+So this line is basically saying "put a button inside the window, gives the dimensions and label it "click me!" 
+
+Line 6:
+</Grid>
+This line closes the grid element
+
+Line 7: 
+</Window>
+This line closes the window element
+
+This file script would create something that looks like:
++-----------------------------+
+|        Hello (title)        |
+|                             |
+|       [ Click Me! ]         |
+|                             |
++-----------------------------+
+
+
+ 
+
