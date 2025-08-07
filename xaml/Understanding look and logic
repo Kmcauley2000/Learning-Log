@@ -1,0 +1,51 @@
+XAML is the file (how it looks)
+C# is the scripting (its brain/logic) 
+In Unity the logic and behaviour both live inside the same C# script.
+In WPF the UI and behaviour are split into two files:
+MainWindow.xaml = Defines the look (layout, buttons, etc.)
+MainWindow.xaml.cs = Contains the logic (event handling, code)
+
+The two are connected by the line:
+x:class="MyApp.MainWindow" 
+
+This tells the app: "This XAML layout belongs to the MainWindow C# class.
+But it doesnt mean: "This file is using C# inside it"
+It does mean: "This layout file should be connected to this C# file for its logic"
+
+so if you have -
+MainWindow.xaml:
+
+<Window x:class="MyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Title="Hello" Height="300" Width="400">
+      <Grid>
+        <Button Content="Click Me" Click="MyButton_Click" />
+      </Grid>
+</Window>
+
+and
+
+MainWindow.xaml.cs:
+
+namespace MyApp
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+          InitializeComponent(); //this loads the xaml
+        }
+        private void MyButton_Click(object sender, RoutedEventArgs e)
+        {
+          MessageBox.Show("Clicked!");
+        }
+    }
+}
+
+So these two files represent ONE class. They are two halves of the same object.
+So basically when the first file has x:class its basically telling the compiler to generate a C# partial class from the XAML file.
+So the second file doesnt need x:class to generate an extra part for logic... because it already is the logic.
+
+
+
+
