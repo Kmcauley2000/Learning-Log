@@ -1,0 +1,4 @@
+XAML is used in:
+WPF (Windwos presentation Foundation) - used for desktop apps in windows
+UWP (Universal Windows Platform) - used for Windows 10+ store apps
+Xamarin.Forms/MAUI - used cross-platform for both mobile and desktop apps.
