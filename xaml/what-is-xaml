@@ -1,0 +1,10 @@
+# What is XAML? 
+
+XAML stands for Extensible Application Markup Language.
+
+Used in WPF apps (Windows Presentation Foundation - Its a microsoft technology used to build desktops applications for windows. A WPF app is a windows program with a GUI built using WPF.)
+Its a declarative language
+similar to HTML but for windows based apps 
+
+Today i had a piece of software that ran into a "System.Windows.Baml2006.TypeConverterMarkupExtension" error - which led to me wanting to understand exact what XAML is. 
+
