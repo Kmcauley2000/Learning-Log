@@ -1,0 +1,69 @@
+Installing Ubuntu and setup:
+
+First of all you need to download Ubuntu.iso from their official website 24.04.
+Then create an empty virtual machine in Hyper-V - with the iso selected etc.
+Once you enter it wont work with the floppy/iso selected.
+Trying to "try or install ubuntu safe graphics" wont work due to the floppy/iso used for the VM.
+Therefore at this screen you need to click e (to edit boot parameters)
+The screen will display the lines:
+  Linux    /casper/vmlinuz ---quiet splash
+  initrd   /casper/initrd
+You need to enter after "/castper/vmlinuz" modprobe.blacklist=floppy 
+modprobe.blacklist=floppy cant be entered on the same line as not enough room, so quiet splash can be replaced with it instead.
+  modprobe: The tool Linux uses to load kernel modules (device driverswho)
+  blacklist= : Tells modprobe that the following module should never be loaded
+  floppy: The specific kernel module for old-style floppy disk drives (the iso used)
+why can quiet splash be removed? Quiet splashh only affects the boot visuals
+or add another line below /casper/vmlinuz ---quiet splash
+/casper/vmlinuz --- modprobe.blacklist=floppy.
+
+Once all this is done, ubuntu will take you to the install ubuntu setup screen/GUI (which looks similar to an apple mac GUI as the desktop has a top bar. 
+Once this download is complete (takes 20-40mins) it will ask you to create an account similar to windows account setup.
+
+Next step once you are inside the Ubuntu desktop go to the terminal (Ctrl + Alt + T)
+type in: sudo nano /etc/default/grub
+A new screen will appear - find the line: GRUB_CMDLINE_LINUX="" 
+change it to: GRUB_CMDLINE_LINUX="modprobe.blacklist=floppy"
+save it by Ctrl+o (Enter)
+exit by Ctrl+X (Exit)
+Then update GRUB: sudo update-grub and accept the restart prompt.
+
+Basic bash practise:
+enter terminal (Ctrl+Alt+T)
+Commands:
+pwd       #Show your current directory
+whoami    #show your username
+uname -a  #show system info
+
+ls        #List Files
+ls -l     #Long Format list
+cd /      #Go to root directory
+cd ~       #Go back to your home directory 
+
+mkdir                      # Make a folder                     so if you put: mkdir testfolder - it would make a folder named testfolder
+cd                         # Go into chosen folls
+der             in this instance testfolder if you type it 
+touch file1.txt file2.txt  #make two files                     touch will create 2 files called file1 and file2 as .txt files
+rm file2.txt               # Will remove one file
+rm -r testfolder           #Remove the folder and its contents
+
+echo "Hello Ubuntu" > hello.txt     #create file with text
+cat hello.txt                       #show the contents
+
+Code in terminal for System updates:   
+sudo apt update && sudo apt upgrade -y
+
+Important to understand. You cant just enter and create random files into cd / (the root directory)
+You can inside cd ~ as its like your home directory.
+
+
+Own practise:
+echo "this is a test file to see if i can create and open a test file in ubuntu" >testfile.txt         enter
+ls         enter        =testfile.txt
+cat testfile.txt        enter        =this is a test file to see if i can create and open a text file in ubuntu
+
+
+
+
+
+
