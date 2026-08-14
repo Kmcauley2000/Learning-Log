@@ -31,3 +31,14 @@ Created 404 error page for when the url is entered incorrectly:
 </html> 
 //This 404 error back also contains a link back to the properly linked home page. 
 !(screenshots/Original404staticsite.jpg)
+
+//Now the next step of updating the site content
+//Updated the index.html to: 
+<!DOCTYPE html>
+<html>
+<head><title>Product Landing Page</title></head>
+<body>
+  <h1>Version 2 - Landing Page</h1>
+  <p>Welcome to our updated product page with the latest information.</p>
+</body>
+</html>
