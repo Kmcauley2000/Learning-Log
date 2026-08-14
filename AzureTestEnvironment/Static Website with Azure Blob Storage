@@ -6,6 +6,27 @@ I have been learning Azure fundamentals for the past few weeks and am now creati
 - Within the storage account i enabled static website on it with doc name: index.html and an error name: 404.html
 - This created my static website link of: https://stgpstaticsitekm1.z33.web.core.windows.net/
 !(screenshots/Resourcegroupstaticsite.jpg)
+!(screenshots/Storageaccountstaticsite.jpg)
 
 14/08/2026
-!(screenshots/Storageaccountstaticsite.jpg)
+- I created an index.html for the static website that users will see when they land on the page: 
+<!DOCTYPE html> 
+<html>
+<head><title>Product Landing Page</title></head>
+<body>
+	<h1>Version 1 - Landing Page</title></head>
+	<p>Welcome to our product page. This is the initial published version.</p>
+</body>
+</html>
+
+Created 404 error page for when the url is entered incorrectly: 
+<!DOCTYPE html> 
+<html>
+<head><title>Page Not Found</title></head>
+<body>
+	<h1>404 - Page Not Found</title></head>
+	<p>The page you requested does not exist. Return to the <a href="/">home page<a/>.</p>
+</body>
+</html> 
+//This 404 error back also contains a link back to the properly linked home page. 
+
