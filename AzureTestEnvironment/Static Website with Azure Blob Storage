@@ -1,0 +1,9 @@
+I have been learning Azure fundamentals for the past few weeks and am now creating a test enviornment to put things into practise, this is my log for those experiments. 
+
+13/08/2026 
+- Setup a resource group to hold static website named: rg-gp-static-website
+- Created a storage account resource called: stgpstaticsitekm1 with LRS and a general StorageV2 account type
+- Within the storage account i enabled static website on it with doc name: index.html and an error name: 404.html
+- This created my static website link of: https://stgpstaticsitekm1.z33.web.core.windows.net/
+
+14/08/2026
