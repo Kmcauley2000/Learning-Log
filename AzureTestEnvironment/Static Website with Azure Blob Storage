@@ -53,4 +53,30 @@ Created 404 error page for when the url is entered incorrectly:
 !(screenshots/Deletedstaticwebsite.jpg)
 
 
+Second Guided Project: Organising and protecting resources with tags and locks
+//Tags
+- Added resource group named:	rg-gp-tags-locks
+- Added two storage account resources:	stgptagslockkm1		&	stgptagslockkm2
+- Added tags to each with a tag name and tag value. 
+I gave the first storage account tag:	development : test
+!(screenshots/Guidedtags2.jpg)
+The second storage account tag: operations : test
+!(screenshots/Guidedtags3.jpg)
+The resource group tag: development : test
+!(screenshots/Guidedtags1.jpg)
+This is for filtering - I've noticed theres a slight issue with azure that even when filtering it still shows all resources except they are named (blank) 
+These can just not be selected.
+
+
+//Locks
+- Added a delete only lock to: stgptagslockkm1		 done via settings > Locks > Add (via the selected resource)
+- Added a read-only lock to resource group: rg-gp-tags-locks 		
+!(screenshots/Guidedresourcelock1.jpg)
+
+
+
+
+
+
+
 
