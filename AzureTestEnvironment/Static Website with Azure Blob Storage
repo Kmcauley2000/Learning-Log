@@ -30,4 +30,4 @@ Created 404 error page for when the url is entered incorrectly:
 </body>
 </html> 
 //This 404 error back also contains a link back to the properly linked home page. 
-!(screenshots/original404staticsite.jpg)
+!(screenshots/Original404staticsite.jpg)
