@@ -48,5 +48,8 @@ Created 404 error page for when the url is entered incorrectly:
 - I learnt how to view the overviews of each individual html thats been uploaded to see its URL and content type etc.
 //Noticed that i can actually edit the html content themselves within this menu too 
 
+- This is everything for the guided project so next step is just removing everyything created. By deleting the resource group is will also remove all resources inside it including the storage account and the $web container
+!(screenshots/Deletingstaticwebsite.jpg)
+
 
 
