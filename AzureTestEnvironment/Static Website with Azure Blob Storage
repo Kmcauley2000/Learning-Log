@@ -18,6 +18,7 @@ I have been learning Azure fundamentals for the past few weeks and am now creati
 	<p>Welcome to our product page. This is the initial published version.</p>
 </body>
 </html>
+!(screenshots/Originalindexstaticsite.jpg)
 
 Created 404 error page for when the url is entered incorrectly: 
 <!DOCTYPE html> 
@@ -29,4 +30,4 @@ Created 404 error page for when the url is entered incorrectly:
 </body>
 </html> 
 //This 404 error back also contains a link back to the properly linked home page. 
-
+!(screenshots/original404staticsite.jpg)
