@@ -1,5 +1,6 @@
 I have been learning Azure fundamentals for the past few weeks and am now creating a test enviornment to put things into practise, this is my log for those experiments. 
 
+//This is my Guided project to deploy static website with Azure blob
 13/08/2026 
 - Setup a resource group to hold static website named: rg-gp-static-website
 - Created a storage account resource called: stgpstaticsitekm1 with LRS and a general StorageV2 account type
