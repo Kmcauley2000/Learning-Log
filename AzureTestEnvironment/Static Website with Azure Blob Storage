@@ -50,6 +50,7 @@ Created 404 error page for when the url is entered incorrectly:
 
 - This is everything for the guided project so next step is just removing everyything created. By deleting the resource group is will also remove all resources inside it including the storage account and the $web container
 !(screenshots/Deletingstaticwebsite.jpg)
+!(screenshots/Deletedstaticwebsite.jpg)
 
 
 
