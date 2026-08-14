@@ -18,7 +18,7 @@ I have been learning Azure fundamentals for the past few weeks and am now creati
 	<p>Welcome to our product page. This is the initial published version.</p>
 </body>
 </html>
-!(screenshots/Originalindexstaticsite.jpg)
+!(screenshots/Originalindexstaticwebsite.jpg)
 
 Created 404 error page for when the url is entered incorrectly: 
 <!DOCTYPE html> 
@@ -30,7 +30,7 @@ Created 404 error page for when the url is entered incorrectly:
 </body>
 </html> 
 //This 404 error back also contains a link back to the properly linked home page. 
-!(screenshots/Original404staticsite.jpg)
+!(screenshots/Original404staticwebsite.jpg)
 
 //Now the next step of updating the site content
 //Updated the index.html to: 
@@ -42,3 +42,4 @@ Created 404 error page for when the url is entered incorrectly:
   <p>Welcome to our updated product page with the latest information.</p>
 </body>
 </html>
+!(screenshots/Secondindexstaticwebsite.jpg)
