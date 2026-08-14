@@ -72,7 +72,9 @@ These can just not be selected.
 - Added a delete only lock to: stgptagslockkm1		 done via settings > Locks > Add (via the selected resource)
 - Added a read-only lock to resource group: rg-gp-tags-locks 		
 !(screenshots/Guidedresourcelock1.jpg)
-
+- Tested to make sure locks were successful: 
+!(screenshots/Guidedresourcelock2.jpg)
+!(screenshots/Guidedresourcelock3.jpg)
 
 
 
